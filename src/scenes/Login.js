@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import {View, StyleSheet} from 'react-native';
-import LoginForm from './LoginForm';
+import {View, StyleSheet, StatusBar} from 'react-native';
+import LoginForm from '../components/forms/LoginForm';
+import {BACKGROUND} from '../styles/colors';
 
 export default class Login extends Component {
   constructor(props) {
@@ -10,6 +11,7 @@ export default class Login extends Component {
     return (
       <View style={styles.container}>
         <LoginForm navigation={this.props.navigation} />
+        <StatusBar backgroundColor="#c56a37" />
       </View>
     );
   }
@@ -18,7 +20,7 @@ export default class Login extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FF9500',
+    backgroundColor: BACKGROUND,
     padding: 40,
   },
 });

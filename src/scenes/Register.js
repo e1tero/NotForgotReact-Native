@@ -7,7 +7,8 @@ import {
   Image,
   TextInput,
 } from 'react-native';
-import RegisterForm from '../components/RegisterForm.js';
+import RegisterForm from '../components/forms/RegisterForm.js';
+import {BACKGROUND} from "../styles/colors";
 
 export default class Login extends Component {
   render() {
@@ -22,7 +23,7 @@ export default class Login extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FF9500',
+    backgroundColor: BACKGROUND,
     padding: 40,
   },
 });

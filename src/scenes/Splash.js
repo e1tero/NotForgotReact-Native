@@ -22,8 +22,8 @@ export default class Splash extends Component {
         <StatusBar hidden={true} />
         <ImageBackground
           style={styles.image2}
-          source={require('../Image/Background.png')}>
-          <Image style={styles.image} source={require('../Image/Logo.png')} />
+          source={require('../assets/image/Background.png')}>
+          <Image style={styles.image} source={require('../assets/image/Logo.png')} />
         </ImageBackground>
       </View>
     );
